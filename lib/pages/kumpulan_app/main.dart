@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'shoe/main_shoe.dart';
 import 'firebase_todo/main.dart';
+import 'cart/main.dart';
 
 class KumpulanApp extends StatelessWidget {
   const KumpulanApp({Key key}) : super(key: key);
@@ -30,6 +31,7 @@ class DrawerItem {
 class MyHomePage extends StatefulWidget {
   final drawerFragments = [
     new DrawerItem("Firebase Todo", Icons.note, () => new FirebasePage()),
+    new DrawerItem("My Cart", Icons.shopping_cart, () => new MyCart()),
     // new DrawerItem("Firebase Todo", Icons.info, () => new ThirdFragment())
   ];
 
